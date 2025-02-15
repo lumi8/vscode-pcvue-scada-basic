@@ -1,0 +1,142 @@
+{
+
+    "Boolean": {
+        "prefix": "Dimb",
+        "body": [
+            "Dim bol${1:varName} As Boolean;"
+        ],
+        "description": "Boolean declaration (available since version 17)"
+    },
+    "Integer": {
+        "prefix": "Dimi",
+        "body": [
+            "Dim int${1:varName} As Integer;"
+        ],
+        "description": "Integer declaration (16 bits, -32 768 à +32 767)"
+    },
+    "Long": {
+        "prefix": "Diml",
+        "body": [
+            "Dim lng${1:varName} As Long;"
+        ],
+        "description": "Long declaration (integer 32 bits, -2 147 483 648 à +2 147 483 647)"
+    },
+    "LongLong": {
+        "prefix": "Dimll",
+        "body": [
+            "Dim llng${1:varName} As LongLong;"
+        ],
+        "description": "LongLong declaration (integer 64 bits, -9 223 372 036 854 775 808 à 9 223 372 036 854 775 807)"
+    },
+    "Single": {
+        "prefix": "Dims",
+        "body": [
+            "Dim sng${1:varName} As Single;"
+        ],
+        "description": "Single declaration (real 32 bits, -3.402823E38 à 3.402823E38)"
+    },
+    "Double": {
+        "prefix": "Dimd",
+        "body": [
+            "Dim dbl${1:varName} As Double;"
+        ],
+        "description": "Double declaration (real 64 bits, -1.79769313486232E308 à 1.79769313486232E308)"
+    },
+    "Str": {
+        "prefix": "Dimstr",
+        "body": [
+            "Dim str${1:varName} As Str;"
+        ],
+        "description": "String declaration (2047 characers max by default)"
+    },
+
+
+
+    "If": {
+        "prefix": "If",
+        "body": [
+            "If (${1:expression}) Then",
+            "    ",
+            "End If"
+        ],
+        "description": "If code block"
+    },
+
+
+    "Ife": {
+        "prefix": "Ife",
+        "body": [
+            "If (${1:expression}) Then",
+            "    ",
+            "Else",
+            "    ",
+            "End If"
+        ],
+        "description": "If Else code block"
+    },
+
+
+    "IfIf": {
+        "prefix": "IfIf",
+        "body": [
+            "If (${1:expression1}) Then",
+            "    ",
+            "Else",
+            "    If (${2:expression2}) Then",
+            "        ",
+            "    Else",
+            "        ",
+            "    End If",
+            "End If"
+        ],
+        "description": "If Else If Else code block"
+    },
+
+
+
+
+    "For": {
+        "prefix": "For",
+        "body": [
+            "For (${1:i} = 0 ; ${1:i} <= 9 ; ${1:i} = ${1:i} + 1)",
+            "    ",
+            "Next ${1:i}"
+        ],
+        "description": "For Each code block"
+    },
+
+
+    "While": {
+        "prefix": "While",
+        "body": [
+            "While (${1:condition})",
+            "    ",
+            "Wend"
+        ],
+        "description": "While Loop code block"
+    },
+
+
+    "Sub": {
+        "prefix": "Sub",
+        "body": [
+            "Sub ${1:subName}()",
+            "    ' add declarations",
+            "End Sub"
+        ],
+        "description": "Sub code block"
+    },
+
+
+    "SubMain": {
+        "prefix": "Subm",
+        "body": [
+            "Sub Main()",
+            "    ' add declarations",
+            "End Sub"
+        ],
+        "description": "Sub Main code block"
+    }
+
+
+}

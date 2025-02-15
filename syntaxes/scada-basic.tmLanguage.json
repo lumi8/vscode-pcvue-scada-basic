@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PcVue SCADA Basic",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#function"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#instructions"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.scada-basic",
+				"match": "(?i:\\b(If|Else|End If|While|Wend|For|Next)\\b)"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.scada-basic",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.scada-basic",
+					"match": "\\\\."
+				}
+			]
+		},
+		"function": {
+			"patterns": [
+				{
+					"name": "support.function.scada-basic",
+					"match": "(?i:^\\s*sub\\s*([a-zA-Z_]\\w*)\\s*(\\()([^)]*)(\\)).*\\n?)|(?i:^\\s*end sub.*\\n?)",
+					"comment": "SCADA Basic function definition"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.scada-basic",
+					"match": "^\\s*'\\s*.*",
+					"comment": "Scada Basic comment"
+				}
+			]
+		},
+		"instructions": {
+			"patterns": [
+				{
+					"name": "keyword.other.scada-basic",
+					"match": "(?i:\\b(Acos|Addstring|Alarm|Alarmdisplay|Alloc_Buffer|Animation|Application|Asc|Asciifield|Asin|Assoclabel|AssociatedActions|Atan|Bacnet|Beep|Bin|Break|BufToExcel|BufToFile|Caption|Cget_Buffer|Chart|Checklist|Chr|Cimway|Cmpstring|ComboBox|Const|Convert|Copy_Buffer|Cos|Crontab|Cyclic|DateTime|DateTimeString|DateTimeValue|Dde|DdeConv|Declare|Delay|Dget_Buffer|Dval|Email|Error|Event|ExcelToBuf|Export|Export_Log|Export_Trend|Exp|Expression|Fclose|Feof|Fgetc|Fgets|FileToBuf|Fopen|Format|Formula|Fputc|Fputs|Fread|Free_Buffer|Fseek|Fstat|Ftp|Fwrite|GetArg|GetProjectDir|GetTree|GroupAlarm|HardCopy|Hex|History|Iget_Buffer|Irand|Ival|Key|Lan|Language|Lcase|Left|Len|Lget_Buffer|ListBox|Lonworks|Log|LogDisplay|Logical|Logical64|lPrint|Ltrim|Lval|M104|M61850|MapDisplay|Mdnp3|Mid|Multimedia|Oct|Opc|OptionList|Population|Pow|Print|Printer|Program|Put_Buffer|Recipe|Refresh_Db|Region|RegVar2d|Rename|Return|Right|Rtrim|Selector|SendList|Seq_Buffer|Sin|Sms|Snmp|Space|Sqrt|Station_Filter|Stop|String|Sval|Svala|SvBatch|SvBranch|SvKey|SvLog|SvSql|SvTrend|System|Tan|Temporary_Db|TextVar|Toc|Tod|ToDouble|ToHms|Toi|Tol|Toll|Tos|Trace|TraceOn|TraceOff|Tree|TreeView|Trend|Ucase|Unlink|Variable|WebVue|Window|XmlPath)\\b)\\s*(?=\\()|(?i:(integer|str|long|longlong|boolean|single|double);)|(?i:\\b(dim|as)\\b)",
+					"comment": "Scada Basic instructions"
+				}
+			]
+		}
+	},
+	"scopeName": "source.scadabasic"
+}

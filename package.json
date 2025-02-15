@@ -1,0 +1,32 @@
+{
+  "name": "pcvue-scada-basic",
+  "displayName": "PcVue SCADA Basic",
+  "description": "For PcVue SCADA Basic programming language",
+  "version": "0.0.3",
+  "icon": "images/logo.png",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "scada-basic",
+      "aliases": ["PcVue SCADA Basic", "scada-basic"],
+      "extensions": [".scb",".svb",".prg"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "scada-basic",
+      "scopeName": "source.scadabasic",
+      "path": "./syntaxes/scada-basic.tmLanguage.json"
+    }],
+    "snippets": [
+        {
+            "language": "scada-basic",
+            "path": "./snippets/scada-basic-snippets.json"
+        }
+    ]
+  }
+}
