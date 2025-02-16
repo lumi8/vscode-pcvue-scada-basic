@@ -2,6 +2,8 @@
 Extension for PcVue SCADA Basic programming language in vscode.
 This package provides syntax highlighting and snippets. 
 
+![plot](images\overview.gif)
+
 ## Features
 
 Automatic recognition of .scb, .svb and .prg files.
@@ -12,14 +14,6 @@ Comments
 Instructions
 Snippets
 
-
-## Requirements
-
-No requirement for the moment.
-
-## Extension Settings
-
-No settings for the moment.
 
 ## Known Issues
 
@@ -55,5 +49,15 @@ Change the name to vscode-pcvue-scada-basic
 longlong and boolean types added
 license MIT
 public repository https://github.com/lumi8/vscode-pcvue-scada-basic.git
+
+## [0.0.5] - 2025-02-16
+### Fixed
+For snippet
+
+### Added
+Const declaration snippet
+Print snippet
+overview.gif
+Repository field added in package.json
 
 **Enjoy!**

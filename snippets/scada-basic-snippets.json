@@ -1,5 +1,12 @@
 {
 
+    "Const": {
+        "prefix": "Const",
+        "body": [
+            "Const ${1:CONST_NAME} = ${2:Value};"
+        ],
+        "description": "Const declaration (real 32 bits, -3.402823E38 à 3.402823E38)"
+    },
     "Boolean": {
         "prefix": "Dimb",
         "body": [
@@ -91,21 +98,15 @@
         ],
         "description": "If Else If Else code block"
     },
-
-
-
-
     "For": {
         "prefix": "For",
         "body": [
             "For (${1:i} = 0 ; ${1:i} <= 9 ; ${1:i} = ${1:i} + 1)",
             "    ",
-            "Next ${1:i}"
+            "Next ${1:i};"
         ],
         "description": "For Each code block"
     },
-
-
     "While": {
         "prefix": "While",
         "body": [
@@ -115,27 +116,30 @@
         ],
         "description": "While Loop code block"
     },
-
-
     "Sub": {
         "prefix": "Sub",
         "body": [
             "Sub ${1:subName}()",
-            "    ' add declarations",
+            "    ${2:’add declarations before instructions}",
             "End Sub"
         ],
         "description": "Sub code block"
     },
-
-
     "SubMain": {
         "prefix": "Subm",
         "body": [
             "Sub Main()",
-            "    ' add declarations",
+            "    ${1:’add declarations before instructions}",
             "End Sub"
         ],
         "description": "Sub Main code block"
+    },
+    "Print": {
+        "prefix": "print",
+        "body": [
+            "Print(${1:expression},${2:expression});"
+        ],
+        "description": "Print code"
     }
 
 

@@ -2,7 +2,11 @@
   "name": "pcvue-scada-basic",
   "displayName": "PcVue SCADA Basic",
   "description": "For PcVue SCADA Basic programming language",
-  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lumi8/vscode-pcvue-scada-basic.git"
+  },
+  "version": "0.0.5",
   "icon": "images/logo.png",
   "engines": {
     "vscode": "^1.97.0"

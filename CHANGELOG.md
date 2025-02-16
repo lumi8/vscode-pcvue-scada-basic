@@ -9,6 +9,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+## [0.0.5] - 2025-02-16
+### Fixed
+For snippet
+
+### Added
+Const declaration snippet
+Print snippet
+overview.gif
+Repository field added in package.json
+
 ## [0.0.4] - 2025-02-15
 ### Fixed
 Improve types declaration
