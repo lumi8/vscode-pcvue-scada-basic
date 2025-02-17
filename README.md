@@ -2,7 +2,7 @@
 Extension for PcVue SCADA Basic programming language in vscode.
 This package provides syntax highlighting and snippets. 
 
-![plot](images\overview.gif)
+![plot](overview.gif)
 
 ## Features
 
@@ -59,5 +59,9 @@ Const declaration snippet
 Print snippet
 overview.gif
 Repository field added in package.json
+
+## [0.0.6] - 2025-02-17
+### Added
+Author and new category in package.json
 
 **Enjoy!**

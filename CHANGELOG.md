@@ -9,6 +9,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+## [0.0.6] - 2025-02-17
+### Added
+Author and new category in package.json
+
 ## [0.0.5] - 2025-02-16
 ### Fixed
 For snippet

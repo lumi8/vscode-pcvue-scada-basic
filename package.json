@@ -6,18 +6,20 @@
     "type": "git",
     "url": "https://github.com/lumi8/vscode-pcvue-scada-basic.git"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
+  "publisher": "lumi8",
   "icon": "images/logo.png",
   "engines": {
     "vscode": "^1.97.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
     "languages": [{
       "id": "scada-basic",
-      "aliases": ["PcVue SCADA Basic", "scada-basic"],
+      "aliases": ["PcVue SCADA Basic", "scada-basic", "SCADA Basic"],
       "extensions": [".scb",".svb",".prg"],
       "configuration": "./language-configuration.json"
     }],
