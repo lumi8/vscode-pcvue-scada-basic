@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/lumi8/vscode-pcvue-scada-basic.git"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "lumi8",
   "icon": "images/logo.png",
   "engines": {
