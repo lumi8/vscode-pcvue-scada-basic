@@ -70,4 +70,8 @@ No know issues
 ### Fixed
 * Formating of `CHANGELOG.md` and `README.md`
 
+## [0.0.8] - 2025-02-19
+### Fixed
+* New logo with background color
+
 **Enjoy!**

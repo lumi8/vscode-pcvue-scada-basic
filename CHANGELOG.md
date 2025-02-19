@@ -9,6 +9,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+## [0.0.8] - 2025-02-19
+### Fixed
+* New logo with background color
+
 ## [0.0.7] - 2025-02-18
 ### Fixed
 * Formating of `CHANGELOG.md` and `README.md`
